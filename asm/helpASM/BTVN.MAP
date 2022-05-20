@@ -1,0 +1,12 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 00000H 00000H BTVN_TEXT          CODE
+ 00000H 00000H 00000H _DATA              DATA
+ 00000H 00048H 00049H CODE               
+ 0004AH 00051H 00008H DATA               
+ 00060H 00127H 000C8H STACK_SEG          
+ 00130H 00157H 00028H INT_PROC           
+
+Program entry point at 0000:0000
+

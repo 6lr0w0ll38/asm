@@ -1,0 +1,32 @@
+TITLE MANGDL.ASM
+.MODEL SMALL
+.STACK 100
+
+.DATA
+  A DB 10H, 20H, 30H, 40H
+  B DB 50H, 60H, 70H, 80H
+  C DB 30H, 40H, 50H, 60H
+  D DB "CON GA"
+  
+.CODE
+  START:
+  
+  MOV AX, @DATA
+  MOV DS, AX
+  
+  MOV CX,4
+  MOV SI, 0
+  MOV DI, 0
+  
+  DOC_MANG:
+    MOV AL, B[SI]
+    MOV D[DI], AL
+    INC SI
+    INC DI
+ LOOP DOC_MANG
+
+ MOV AH, 4CH
+ INT 21H 
+      
+  
+END START  
